@@ -1,0 +1,14 @@
+Resources:
+ myReplicationGroup:
+  Type: 'AWS::ElastiCache::ReplicationGroup'
+  Properties:
+    ReplicationGroupDescription: my description
+    NumCacheClusters: '2'
+    Engine: redis
+    CacheNodeType: cache.t3.medium
+    AutomaticFailoverEnabled: 'true'
+    CacheSubnetGroupName: test1234567
+    EngineVersion: 7.1
+    PreferredMaintenanceWindow: 'wed:09:25-wed:22:30'
+    SnapshotRetentionLimit: '4'
+    SnapshotWindow: '03:30-05:30'
