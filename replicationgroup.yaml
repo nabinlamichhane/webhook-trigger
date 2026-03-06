@@ -3,7 +3,7 @@ Resources:
   Type: 'AWS::ElastiCache::ReplicationGroup'
   Properties:
     ReplicationGroupDescription: my description
-    NumCacheClusters: '3'
+    NumCacheClusters: '2'
     Engine: redis
     CacheNodeType: cache.t3.medium
     AutomaticFailoverEnabled: 'true'
